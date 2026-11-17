@@ -1,0 +1,29 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Nova+Square&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-electro: "Electrolize", sans-serif;
+
+  --color-nav-gray: #d8d8d8;
+
+  --color-gamer-black: #0b0b10;
+  --color-gamer-card: #1b1a23;
+  --color-gamer-purple: #a56cda;
+  --color-gamer-pink: #f29bc8;
+  --color-gamer-text: #f5f3f8;
+}
+
+@plugin "daisyui";
+
+@layer base {
+  body {
+    background-color: var(--color-gamer-black);
+    color: var(--color-gamer-text);
+    font-family: var(--font-roboto);
+    min-height: 100vh;
+  }
+}
